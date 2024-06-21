@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Performance Optimization
+For projects with a large number of components or data, consider implementing lazy loading techniques to improve initial page load times. Next.js offers various ways to achieve lazy loading, such as:
+
+```next/image``` for lazy loading images
+```next/dynamic``` for lazy loading components
+```React.lazy``` with Suspense for more granular control
+Refer to the Next.js documentation for detailed information on these techniques: https://nextjs.org/docs
