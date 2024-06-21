@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+// import '@fortawesome/fontawesome-svg-core/styles.css';
+import { Toaster } from 'react-hot-toast'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from './(components)/Navbar';
+import Scripts from './(components)/Scripts';
+import Footer from "./(components)/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body className={`${inter.className} antialiased min-vh-100 d-flex flex-column`} style={{ backgroundColor: '#222222' }}>
+        <Navbar />
+        {children}
+        <Toaster />
+        <Scripts />
+        <Footer/>
+      </body>
+
     </html>
   );
 }

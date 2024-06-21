@@ -1,0 +1,138 @@
+@import "./globalsVars.scss";
+
+//!-- Start global variables
+$mainColor: #5011cc;
+// End global variables
+
+//!-- Start main class
+.mainColor {
+    color: $mainColor;
+}
+
+.mainBGColor {
+    background-color: $mainColor;
+    color: white;
+}
+
+// End main class
+
+//!-- Start navbar component
+.activeLink {
+    color: $mainColor !important;
+}
+
+.nav-link {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    padding: 8px 0 !important;
+}
+
+.nav-link:hover {
+    color: $mainColor !important;
+    border-bottom: 2px solid $mainColor !important;
+    padding-bottom: 1px !important;
+    transition: border-bottom .2s ease-in-out !important;
+
+    @include small {
+        border-bottom: none !important;
+        padding-bottom: 8px !important;
+    }
+}
+
+// End navbar component
+
+//!-- Start home component
+.homeImgTop {
+    width: 600px;
+
+    // height: 600px;
+    @include small {
+        width: 100%
+    }
+}
+
+.homeImgDown {
+    width: 600px;
+
+    // height: 600px;
+    @include small {
+        width: 100%
+    }
+}
+
+.btn:hover {
+    background-color: $mainColor !important;
+    border-color: $mainColor !important;
+}
+
+// End home component
+
+//!-- start All Blog component
+.card:hover .card-title {
+    color: $mainColor;
+}
+
+.All-Blog .card-text-top::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background-color: $mainColor;
+}
+
+// End All Blog component
+
+//!-- Start BlogDetails component
+.VirtualTours .mainImage {
+    // width: 100% !important;
+    height:480px;
+    overflow: hidden;
+    vertical-align: middle;
+    object-fit: contain;
+
+    @include medium {
+        height:24rem;
+    }
+    @include small {
+        height:16rem;
+    }
+}
+.VirtualTours .mainContent .container,
+.BlogDetails .mainContent .container,
+.About{
+    width: 45% !important;
+    @include large {
+        width: 60% !important;
+    }
+    @include medium {
+        width: 75% !important;
+    }
+    @include small {
+        width: 100% !important;
+    }
+}
+// End BlogDetails component
+
+
+
+
+
+//!-- Start Footer component
+footer .social a {
+    width: 50%;
+    display: block;
+}
+
+.footerImg {
+    width: 100%;
+    height: auto;
+    // display: block;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+//!-- End Footer component
