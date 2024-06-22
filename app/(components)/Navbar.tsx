@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="container">
                     <Link className="navbar-brand" href="/">
                         <Image src={navimg} alt='' className='w-25 h-25 me-3' priority={true}/>
-                        <span className='fw-bold' style={{ color: '#243e63' }}>My Blog App</span>
+                        <span className='fw-bold d-none d-sm-block' style={{ color: '#243e63' }}>My Blog App</span>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
